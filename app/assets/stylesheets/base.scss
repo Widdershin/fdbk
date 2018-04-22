@@ -1,0 +1,41 @@
+
+/* https://color.adobe.com/%EB%82%B4-Color-%ED%85%8C%EB%A7%88-color-theme-10649495/ */
+
+@import 'colors';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: $text;
+  background: $primary;
+}
+
+nav {
+  background: $nav;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  padding: 0.8rem;
+}
+
+a {
+  color: $highlight;
+}
+
+a:visited {
+  color: $light;
+}
+
+hr {
+  color: $highlight;
+}

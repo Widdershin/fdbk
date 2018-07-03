@@ -1,42 +1,19 @@
 
 <div class="feedback-content">
-
   <div class="mediums">
-    <div class="medium">
-      <h2>Writing</h2>
+      <% Medium.all.each do |medium| %>
+        <div class="medium">
+          <h2><%= medium.name %></h2>
 
-      <div class="works">
-        <div class="work">
-          <h3>Some random post</h3>
-          <button>Give Feedback</button>
+          <div class="works">
+            <% medium.works.each do |work| %>
+              <div class="work">
+                <h3><%= work.title %></h3>
+                <button>Give Feedback</button>
+              </div>
+            <% end %>
+          </div>
         </div>
-
-        <div class="work">
-          <h3>And another one</h3>
-          <button>Give Feedback</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="my-work">
-    <div class="my-work-header">
-      <h2>My submissions</h2>
-      <button>Submit new work</button>
-    </div>
-    <div class="submissions">
-      <hr/>
-      <div class="submission">
-        <h3>The world needs good games</h3>
-        <p>10 unreviewed pieces of feedback</p>
-      </div>
-
-      <hr/>
-      <div class="submission">
-        <h3>The world needs good games</h3>
-        <p>10 unreviewed pieces of feedback</p>
-      </div>
-    </div>
+      <% end %>
   </div>
 </div>

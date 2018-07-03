@@ -33,7 +33,7 @@ a {
 }
 
 a:visited {
-  color: $light;
+  color: darken($highlight, 20%);
 }
 
 hr {
